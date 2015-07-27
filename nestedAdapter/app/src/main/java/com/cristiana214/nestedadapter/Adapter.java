@@ -66,7 +66,8 @@ public class Adapter extends BaseAdapter {
         }
         gridadapter = new GridAdapter(context, sublist);
         gridview.setAdapter(gridadapter);
-        int totalDividersHeight = 72 * (subarray.length() - 1);
+        int gridiTemHeight=72;//just change this with the value of viewitem height
+        int totalDividersHeight = gridiTemHeight * (subarray.length() - 1);
         ViewGroup.LayoutParams params = gridview.getLayoutParams();
         params.height =  totalDividersHeight;
         gridview.setLayoutParams(params);
